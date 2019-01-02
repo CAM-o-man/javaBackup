@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Exiting Early">
+    <output-path>$PROJECT_DIR$/out/artifacts/Exiting_Early</output-path>
+    <root id="archive" name="Exiting Early.jar" />
+  </artifact>
+</component>

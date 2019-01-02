@@ -1,0 +1,9 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Author: Connor McDermid
+${licensePrefix}Block: 1A
+${licensePrefix}Assignment:
+<#if licenseLast??>
+${licenseLast}
+</#if>

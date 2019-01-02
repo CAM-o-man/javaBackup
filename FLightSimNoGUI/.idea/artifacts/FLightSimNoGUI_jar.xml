@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FLightSimNoGUI:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FLightSimNoGUI_jar</output-path>
+    <root id="archive" name="FLightSimNoGUI.jar">
+      <element id="module-output" name="FLightSimNoGUI" />
+    </root>
+  </artifact>
+</component>

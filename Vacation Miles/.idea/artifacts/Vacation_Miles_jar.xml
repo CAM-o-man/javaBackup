@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Vacation Miles:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Vacation_Miles_jar</output-path>
+    <root id="archive" name="Vacation Miles.jar">
+      <element id="module-output" name="Vacation Miles" />
+    </root>
+  </artifact>
+</component>

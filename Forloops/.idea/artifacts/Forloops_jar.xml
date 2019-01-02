@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Forloops:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Forloops_jar</output-path>
+    <root id="archive" name="Forloops.jar">
+      <element id="module-output" name="Forloops" />
+    </root>
+  </artifact>
+</component>
