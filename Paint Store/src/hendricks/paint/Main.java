@@ -29,6 +29,28 @@ public class Main {
 
     }
     public static void billing(double red, double green) {
+        Scanner input = new Scanner(System.in);
+        double price = red + green;
+        final double finalprice = price * 0.08;
+        System.out.println("Red Paint: " + red + "" +
+                "\n Green Paint: " + green + "" +
+                "\n Subtotal: " + price +
+                "\n Tax: 8%" +
+                "\n Total: " + finalprice);
+        System.out.println("Please input your PIN on the PIN pad.");
+        pinpad(input.next());
 
     }
+    public static boolean pinpad(String pin) {
+        if (pin.length() == 4 || pin.length() == 6 && pin.matches("^[0-9]+$")) { //This regex took me 10 minutes
+            return true;
+        }
+        else if (pin.length() == 4 || pin.length() == 6 && pin.matches("^[a-zA-Z_.!@#$%^&*()]")) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
 }
