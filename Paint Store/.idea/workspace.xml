@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17245263-1c61-4cbe-9ebd-c76cb7a600e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Help/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hendricks/paint/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hendricks/paint/Main.java" afterDir="false" />
     </list>
@@ -19,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hendricks/paint/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="161">
+              <caret line="41" column="72" lean-forward="true" selection-start-line="41" selection-start-column="72" selection-end-line="41" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -109,12 +107,20 @@
       <workItem from="1546433815303" duration="731000" />
       <workItem from="1546438214096" duration="1705000" />
       <workItem from="1546537086180" duration="464000" />
-      <workItem from="1546606884272" duration="2128000" />
+      <workItem from="1546606884272" duration="2270000" />
     </task>
+    <task id="LOCAL-00001" summary="finished billing() and pinpad()">
+      <created>1546609051056</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1546609051056</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9271000" />
+    <option name="totallyTimeSpent" value="9413000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -153,11 +159,15 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finished billing() and pinpad()" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished billing() and pinpad()" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/hendricks/paint/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="161">
+          <caret line="41" column="72" lean-forward="true" selection-start-line="41" selection-start-column="72" selection-end-line="41" selection-end-column="72" />
         </state>
       </provider>
     </entry>
