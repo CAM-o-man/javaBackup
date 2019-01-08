@@ -48,7 +48,7 @@ public class Main {
         if (pin.length() == 4 || pin.length() == 6 && pin.matches("^[0-9]+$")) { //This regex took me 10 minutes
             return true;
         }
-        else if (pin.length() == 4 || pin.length() == 6 && pin.matches("^[a-zA-Z_.!@#$%^&*()]")) {
+        else if (pin.length() == 4 || pin.length() == 6 && pin.matches("^[a-zA-Z_.!@#$%^&*()]")) { //This one took me 5
             return true;
         }
         else {
