@@ -10,4 +10,20 @@ public class database {
             System.out.print("*");
         }
     }
+    public String toDollars(int cents) {
+        int dollars = 0;
+        while(true) {
+            if (cents > 100) {
+                dollars += 1;
+                cents -= 100;
+            }
+            else {
+                break;
+            }
+        }
+        String dollarString = Integer.toString(dollars);
+        String centsString = Integer.toString(cents);
+        return (dollarString + "." + centsString);
+
+    }
 }
