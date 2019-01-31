@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0c34be6-7871-4c4f-84d6-570f2850d959" name="Default Changelist" comment="" />
+    <list default="true" id="d0c34be6-7871-4c4f-84d6-570f2850d959" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../MidTerms/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hendricks/geoLab/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="183" column="119" selection-start-line="183" selection-start-column="119" selection-end-line="183" selection-end-column="119" />
+            <state relative-caret-position="412">
+              <caret line="138" column="5" lean-forward="true" selection-start-line="103" selection-start-column="4" selection-end-line="138" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -26,6 +30,9 @@
     <findStrings>
       <find>mcdermid.connor.database.asterisks();</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -40,6 +47,7 @@
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -141,16 +149,17 @@
       <workItem from="1545351947331" duration="1040000" />
       <workItem from="1545427820539" duration="4095000" />
       <workItem from="1545665577462" duration="48000" />
+      <workItem from="1548947091871" duration="62000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15323000" />
+    <option name="totallyTimeSpent" value="15385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2751678" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27919462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -202,8 +211,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hendricks/geoLab/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="183" column="119" selection-start-line="183" selection-start-column="119" selection-end-line="183" selection-end-column="119" />
+        <state relative-caret-position="412">
+          <caret line="138" column="5" lean-forward="true" selection-start-line="103" selection-start-column="4" selection-end-line="138" selection-end-column="5" />
         </state>
       </provider>
     </entry>
