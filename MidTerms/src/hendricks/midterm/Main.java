@@ -13,12 +13,16 @@ import java.awt.Desktop;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.io.IOException;
+import java.util.Random;
 public class Main {
 
-    public static void main(String[] args) {
-        //Using main as a sort of director/controller, not menu
+    int[] productNums = new int[1024];
+    int iterator = 0;
+    String[] adresses = new String[1024];
+    public static void main(String[] args) throws InterruptedException, IOException, URISyntaxException {
+        menu();
     }
-    public static void menu() throws InterruptedException {
+    public static void menu() throws InterruptedException, IOException, URISyntaxException {
         database d = new database();
         Scanner input = new Scanner(System.in);
         //Illuminati Logo
@@ -61,7 +65,7 @@ public class Main {
         }
     }
     @SuppressWarnings("SpellCheckingInspection")
-    public static void employeeList() throws URISyntaxException, IOException, InterruptedException {
+    private static void employeeList() throws URISyntaxException, IOException, InterruptedException {
         Scanner input = new Scanner(System.in);
         System.out.println("Our top employees are:");
         System.out.println("Tejas Metha");
@@ -78,5 +82,115 @@ public class Main {
         else {
             menu();
         }
+    }
+    private static void services() throws InterruptedException, IOException, URISyntaxException {
+        Scanner input = new Scanner(System.in);
+        System.out.println("We here at Illuminati, Inc. offer many products and services. Here is a list.");
+        System.out.println("______________________________________________________________________________");
+        System.out.println("|Products                |Services               |Cost Per Unit              |");
+        System.out.println("|________________________|_______________________|___________________________|");
+        System.out.println("|1.Intelligence Agency   |Free Assistance        |2200 Rubles                |");
+        System.out.println("|Subjugation Kit         |                       |                           |");
+        System.out.println("|________________________|_______________________|___________________________|");
+        System.out.println("|2.Alien Invasion DIY Kit|Free Delivery          |8000 Rubles                |");
+        System.out.println("|________________________|_______________________|___________________________|");
+        System.out.println("|3.Home Spy Kit          |N/A                    |50 Rubles                  |");
+        System.out.println("|________________________|_______________________|___________________________|");
+        System.out.println("|4.Civilian Subjugation  |Optional Installation  |3000 Rubles                |");
+        System.out.println("|Arcade Cabinet(Polybius)|And Delivery           |                           |");
+        System.out.println("|________________________|_______________________|___________________________|");
+
+        System.out.println("Do you wish to make a purchase ([P]) or return to the menu([M])?");
+        String usr = input.next();
+        if (usr.toUpperCase().equals("P")) {
+            purchase();
+        } else if (usr.toUpperCase().equals("M")) {
+            menu();
+        } else {
+            System.out.println("That is not valid input.");
+        }
+    }
+    public static void purchase() throws InterruptedException, IOException, URISyntaxException {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Would you like to: \n" +
+                "1.\tView our product list?\n" +
+                "2.\tMake a purchase?\n" +
+                "3.\tTrack a purchase?");
+        int usr = input.nextInt();
+        switch(usr) {
+            case 1:
+                services();
+                break;
+            case 2:
+                purchaseItem();
+                break;
+            case 3:
+                System.out.println("Please input the product number.");
+                trackPurchase(input.nextInt());
+                break;
+            default:
+                System.out.println("Main.purchase");
+                System.out.println("An error has occurred. Restarting program.");
+                menu();
+        }
+    }
+    public static void purchaseItem() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please input the number of the product you would like to purchase:");
+        int product = input.nextInt();
+        finalStep(product);
+
+    }
+    public void finalStep(int product) throws InterruptedException, IOException, URISyntaxException {
+        Scanner input = new Scanner(System.in);
+        int cost;
+        switch (product) {
+            case 1:
+                cost = 2200;
+                break;
+            case 2:
+                cost = 8000;
+                break;
+            case 3:
+                cost = 50;
+                break;
+            case 4:
+                cost = 3000;
+                break;
+            default:
+                System.out.println("Main.finalStep");
+                System.out.println("An error has occurred. Shutting down.");
+                System.exit(-10000);
+                cost = 0; //Only so Java doesn't throw a fit about cost not being initialized
+                break;
+        }
+        System.out.println("That will be " + cost + " rubles.");
+        System.out.println("Please specify a delivery address.");
+        String address = input.next();
+        System.out.println("Delivering to: " + address);
+        Random rand = new Random();
+        int productNum = rand.nextInt(1024) + 1;
+        iterator++;
+        productNums[iterator] = productNum;
+        adresses[iterator] = address;
+        System.out.println("The product number is: " + productNum);
+        System.out.println("Thank you for shopping with us.");
+    }
+    public void trackPurchase(int productNum) {
+        Integer prodNum = (Integer)productNum;
+        int iter = 0;
+        for (Object prodnum : productNums) {
+            iter++;
+        }
+        if (iter == 1) {
+            findProduct(productNum);
+        } else {
+            System.out.println("Main.trackPurchase");
+            System.out.println("An error has occurred.");
+            System.exit(-10);
+        }
+    }
+    public void findProduct(int productNum) {
+        int len =
     }
 }
