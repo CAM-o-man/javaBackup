@@ -1,21 +1,15 @@
 package mcdermid.connor;
 
 public class Main {
-
     public static void main(String[] args) {
-        int x = 6;
-        System.out.println(fakefactorial(x));
+        System.out.println(go(7));
     }
-    private static int fakefactorial(int x) {
-        int ans = 0;
-        try {
-            for (int i = 0; i < x; i++) {
-                ans += x + (x - i);
-            }
-        } catch (Exception e) {
-            System.out.println("Main.fakefactorial");
-            throw e;
+    public static int go(int x) {
+        int q=0;
+        while (x > 0) {
+            q = q + x;
+            x = x - 1;
         }
-        return ans;
+        return q;
     }
 }

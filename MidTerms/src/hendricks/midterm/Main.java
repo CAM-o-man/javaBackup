@@ -1,9 +1,4 @@
 package hendricks.midterm;
-/**
- * Author: Connor McDermid
- * Lab: MidTerm Project
- * Extra: TBD
- */
 
 import mcdermid.connor.database;
 import java.util.Scanner;
@@ -15,14 +10,19 @@ import java.net.URISyntaxException;
 import java.io.IOException;
 import java.util.Random;
 public class Main {
-
+    /**
+     * Author: Connor McDermid
+     * Project: MidTerm 2
+     */
     int[] productNums = new int[1024];
     int iterator = 0;
-    String[] adresses = new String[1024];
+    int[] products = new int[1024];
+    String[] addresses = new String[1024];
     public static void main(String[] args) throws InterruptedException, IOException, URISyntaxException {
-        menu();
+        Main main = new Main();
+        main.menu();
     }
-    public static void menu() throws InterruptedException, IOException, URISyntaxException {
+    public void menu() throws InterruptedException, IOException, URISyntaxException {
         database d = new database();
         Scanner input = new Scanner(System.in);
         //Illuminati Logo
@@ -65,7 +65,7 @@ public class Main {
         }
     }
     @SuppressWarnings("SpellCheckingInspection")
-    private static void employeeList() throws URISyntaxException, IOException, InterruptedException {
+    private void employeeList() throws URISyntaxException, IOException, InterruptedException {
         Scanner input = new Scanner(System.in);
         System.out.println("Our top employees are:");
         System.out.println("Tejas Metha");
@@ -83,7 +83,7 @@ public class Main {
             menu();
         }
     }
-    private static void services() throws InterruptedException, IOException, URISyntaxException {
+    private void services() throws InterruptedException, IOException, URISyntaxException {
         Scanner input = new Scanner(System.in);
         System.out.println("We here at Illuminati, Inc. offer many products and services. Here is a list.");
         System.out.println("______________________________________________________________________________");
@@ -110,7 +110,7 @@ public class Main {
             System.out.println("That is not valid input.");
         }
     }
-    public static void purchase() throws InterruptedException, IOException, URISyntaxException {
+    public void purchase() throws InterruptedException, IOException, URISyntaxException {
         Scanner input = new Scanner(System.in);
         System.out.println("Would you like to: \n" +
                 "1.\tView our product list?\n" +
@@ -134,7 +134,7 @@ public class Main {
                 menu();
         }
     }
-    public static void purchaseItem() {
+    public void purchaseItem() throws InterruptedException, IOException, URISyntaxException {
         Scanner input = new Scanner(System.in);
         System.out.println("Please input the number of the product you would like to purchase:");
         int product = input.nextInt();
@@ -172,9 +172,11 @@ public class Main {
         int productNum = rand.nextInt(1024) + 1;
         iterator++;
         productNums[iterator] = productNum;
-        adresses[iterator] = address;
+        addresses[iterator] = address;
+        products[iterator] = product;
         System.out.println("The product number is: " + productNum);
         System.out.println("Thank you for shopping with us.");
+        menu();
     }
     public void trackPurchase(int productNum) {
         Integer prodNum = (Integer)productNum;
@@ -191,6 +193,34 @@ public class Main {
         }
     }
     public void findProduct(int productNum) {
-        int len =
+        int iter = 0;
+        String address = null;
+        for (int productNum1 : productNums) {
+
+            if (productNum1 == productNum) {
+                address = addresses[iter];
+                break;
+            }
+            iter++;
+        }
+        System.out.println("Your order of one " + findProductName(products[iter]));
+        System.out.println("Will be delivered to " + address);
+    }
+    public String findProductName(int product) {
+        switch (product) {
+            case 1:
+                return "Intelligence Agency Subjugation Kit";
+            case 2:
+                return "Alien Invasion DIY Kit";
+            case 3:
+                return "Home Spy Kit";
+            case 4:
+                return "Polybius Arcade Cabinet";
+            default:
+                System.out.println("Main.findProductName");
+                System.out.println("Error encountered. Shutting down.");
+                System.exit(-10);
+                return null;
+        }
     }
 }
