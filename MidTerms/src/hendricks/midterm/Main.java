@@ -1,5 +1,6 @@
 package hendricks.midterm;
-
+//TODO: Get this QA tested
+//TODO: Make the login a separate method
 import mcdermid.connor.database;
 import java.util.Scanner;
 import java.io.IOException;
@@ -9,6 +10,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.io.IOException;
 import java.util.Random;
+@SuppressWarnings("SpellCheckingInspection")
 public class Main {
     /**
      * Author: Connor McDermid
@@ -178,21 +180,15 @@ public class Main {
         System.out.println("Thank you for shopping with us.");
         menu();
     }
-    public void trackPurchase(int productNum) {
-        Integer prodNum = (Integer)productNum;
-        int iter = 0;
-        for (Object prodnum : productNums) {
-            iter++;
-        }
-        if (iter == 1) {
-            findProduct(productNum);
-        } else {
-            System.out.println("Main.trackPurchase");
-            System.out.println("An error has occurred.");
-            System.exit(-10);
+    public void trackPurchase(int productNum) throws InterruptedException, IOException, URISyntaxException {
+
+        for (Integer object : productNums) {
+            if (object == productNum) {
+                findProduct(productNum);
+            }
         }
     }
-    public void findProduct(int productNum) {
+    public void findProduct(int productNum) throws InterruptedException, IOException, URISyntaxException {
         int iter = 0;
         String address = null;
         for (int productNum1 : productNums) {
@@ -205,6 +201,7 @@ public class Main {
         }
         System.out.println("Your order of one " + findProductName(products[iter]));
         System.out.println("Will be delivered to " + address);
+        menu();
     }
     public String findProductName(int product) {
         switch (product) {
