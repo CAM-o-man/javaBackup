@@ -2,17 +2,19 @@ package hendricks.lab61;
 import java.util.Scanner;
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a positive or negative decimal.");
         double deci = input.nextDouble();
         long deciRound = Math.round(deci);
         System.out.println(deciRound);
+        Thread.sleep(1000);
         System.out.println("Now enter 2 ages");
         int agex = input.nextInt();
         int agey = input.nextInt();
         int diff = Math.abs(agey - agex);
         System.out.println(diff);
+        Thread.sleep(1000);
         System.out.println("A chart of numbers and their roots.");
         for (int i = 0; i < 20; i++) {
             if (Math.sqrt(i) % 1 == 0) {
@@ -22,16 +24,21 @@ public class Main {
                 System.out.println(i + "\t\t" + "\u221A" + i);
             }
         }
+        Thread.sleep(2000);
         System.out.println("A chart of numbers and their powers.");
         for (int i = 1; i < 6; i++) {
             System.out.println(i + "\t" + Math.pow(i, 2) + "\t" + Math.pow(i, 3));
         }
+        Thread.sleep(2000);
         System.out.println("Enter 2 integers.");
         int int1 = input.nextInt();
         int int2 = input.nextInt();
         System.out.println(Math.max(int1, int2));
+        Thread.sleep(2000);
         halloween();
+        Thread.sleep(2000);
         bacteria();
+        Thread.sleep(2000);
         pythag();
     }
     private static void halloween() {
