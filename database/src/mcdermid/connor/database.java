@@ -95,6 +95,10 @@ public class database {
             default:
                 System.out.println("database.chars");
                 System.exit(-1);
+                pchar = '!';
+        }
+        for (int i = 0; i < x; i++) {
+            System.out.print(pchar);
         }
     }
     public static void navWeb(String url) throws URISyntaxException, IOException {

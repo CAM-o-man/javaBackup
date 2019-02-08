@@ -1,14 +1,12 @@
 package hendricks.midterm;
 //TODO: Get this QA tested
-//TODO: Make the login a separate method
+//TODO: Logon authentication
 import mcdermid.connor.database;
 import java.util.Scanner;
 import java.io.IOException;
-import java.util.Scanner;
 import java.awt.Desktop;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.io.IOException;
 import java.util.Random;
 @SuppressWarnings("SpellCheckingInspection")
 public class Main {
@@ -19,6 +17,7 @@ public class Main {
     int[] productNums = new int[1024];
     int iterator = 0;
     int[] products = new int[1024];
+    String name;
     String[] addresses = new String[1024];
     public static void main(String[] args) throws InterruptedException, IOException, URISyntaxException {
         Main main = new Main();
@@ -27,22 +26,11 @@ public class Main {
     public void menu() throws InterruptedException, IOException, URISyntaxException {
         database d = new database();
         Scanner input = new Scanner(System.in);
-        //Illuminati Logo
+        login(); //Log in to system
+        //Illuminati logo
         System.out.println("Welcome to Illuminati Incorporated.");
         //noinspection AccessStaticViaInstance
         d.otri();
-        System.out.println("Username:");
-        String username = input.next();
-        System.out.print("\n");
-        System.out.println("Checking authorization...");
-        System.out.print(".");
-        Thread.sleep(1000);
-        System.out.print(".");
-        Thread.sleep(1000);
-        System.out.print(".");
-        Thread.sleep(1000);
-        System.out.println("\nAuthorization complete. Welcome, " + username);
-
         System.out.println("To see our employee list, press 1.");
         System.out.println("To see our services, press 2.");
         System.out.println("To make a purchase, press 3.");
@@ -66,6 +54,23 @@ public class Main {
                 menu();
         }
     }
+
+    private void login() throws InterruptedException, IOException, URISyntaxException {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Username:");
+        name = input.next();
+        System.out.print("\n");
+        System.out.println("Checking authorization...");
+        System.out.print(".");
+        Thread.sleep(1000);
+        System.out.print(".");
+        Thread.sleep(1000);
+        System.out.print(".");
+        Thread.sleep(1000);
+        System.out.println("\nAuthorization complete. Welcome, " + name);
+
+    }
+
     @SuppressWarnings("SpellCheckingInspection")
     private void employeeList() throws URISyntaxException, IOException, InterruptedException {
         Scanner input = new Scanner(System.in);
@@ -80,6 +85,7 @@ public class Main {
         if (usr.toUpperCase().equals("M")) {
             Desktop dtop = Desktop.getDesktop();
             dtop.browse(new URI("https://classroom.google.com/u/1/r/MTc2MjIyNTcxNjNa/sort-last-name"));
+            menu();
         }
         else {
             menu();
