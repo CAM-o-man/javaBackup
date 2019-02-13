@@ -1,5 +1,6 @@
 package hendricks.lab61;
 import java.util.Scanner;
+@SuppressWarnings("SpellCheckingInspection")
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
@@ -73,10 +74,12 @@ public class Main {
 
     }
     private static void pythag() {
-        double rightLeg = 9.0d;
-        double leftLeg = 13.0d;
-        double hypotenuse = (int)Math.round(Math.hypot(rightLeg, leftLeg)); //Finding hypotenuse
-        int angle = (int)Math.round(Math.sin(rightLeg/hypotenuse));
+        double opposite = 9.0d;
+        double adjacent = 13.0d;
+        double hypotenuse = (int)Math.round(Math.hypot(opposite, adjacent)); //Finding hypotenuse
+        double rad = Math.acos(adjacent / hypotenuse);
+        long angle = Math.round(Math.toDegrees(rad));
+
         System.out.println("The angle is " + angle + "\u00b0");
     }
 }
