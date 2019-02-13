@@ -40,7 +40,7 @@ public class Main {
         Thread.sleep(2000);
         bacteria();
         Thread.sleep(2000);
-        pythag();
+        cosine();
     }
     private static void halloween() {
         Scanner input = new Scanner(System.in);
@@ -73,7 +73,7 @@ public class Main {
 
 
     }
-    private static void pythag() {
+    private static void cosine() {
         double opposite = 9.0d;
         double adjacent = 13.0d;
         double hypotenuse = (int)Math.round(Math.hypot(opposite, adjacent)); //Finding hypotenuse
