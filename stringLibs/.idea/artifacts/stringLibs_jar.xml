@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="stringLibs:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/stringLibs_jar</output-path>
+    <root id="archive" name="stringLibs.jar">
+      <element id="module-output" name="stringLibs" />
+    </root>
+  </artifact>
+</component>
