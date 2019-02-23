@@ -1,7 +1,10 @@
 package hendricks.lab64;
 
-import java.util.ArrayList;
-
+/**
+ * Author: Connor McDermid
+ * Lab: 6.4
+ * Extra: StringBuilders
+ */
 public class Main {
 
     public static void main(String[] args) {
@@ -36,8 +39,7 @@ public class Main {
         for (Character object: Launch.toCharArray()) {
             go.append(object);
             go.append(" - ");
-            sum += Integer.parseInt(Character.toString(object));
-
+            sum += Integer.parseInt(Character.toString(object)); //Should get the integer from the current char
         }
         go.replace(16, 18, "GO!");
         System.out.println(go);
