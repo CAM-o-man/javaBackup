@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="stringConversion:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/stringConversion_jar</output-path>
+    <root id="archive" name="stringConversion.jar">
+      <element id="module-output" name="stringConversion" />
+    </root>
+  </artifact>
+</component>
