@@ -1,6 +1,4 @@
 package hendricks.lab66;
-
-import java.io.IOException;
 import java.util.Scanner;
 import java.util.Random;
 public class Main {
@@ -16,61 +14,61 @@ public class Main {
         } else {
             yodamode = false;
         }
+        system(yodamode);
     }
-    public static void system() {
-        String[] arg = new String[0];
-        main(arg).runtime.start;
+    public static void system(boolean yodamode) {
         System.out.println("Running simulation.......");
         System.out.println("Checking readiness.......");
         System.out.println("R2D2\tC3PO\tHan \tLuke\tChewy   Leia\tLAUNCH");
         int run = 0;
         boolean launch;
-        long starttime = System.nanoTime();
+        final long starttime = System.nanoTime();
+        boolean r2d2, c3po, han, luke, chewy, leia;
         do {
-
+            r2d2 = R2D2();
+            c3po = C3PO();
+            han = han();
+            luke = luke();
+            chewy = chewy();
+            leia = leia();
             run++;
             System.out.print("Run " + run + ": ");
-            if (R2D2()) {
-                System.out.print("GO\t");
-            } else {
-                System.out.print("NO\t");
-            }
-            if (C3PO()) {
-                System.out.print("GO\t");
-            } else {
-                System.out.print("NO\t");
-            }
-            if (han()) {
-                System.out.print("GO\t");
-            } else {
-                System.out.print("NO\t");
-            }
-            if (luke()) {
-                System.out.print("GO\t");
-            } else {
-                System.out.print("NO\t");
-            }
-            if (chewy()) {
-                System.out.print("GO\t");
-            } else {
-                System.out.print("NO\t");
-            }
-            if (leia()) {
-                System.out.print("GO\t");
-            } else {
-                System.out.print("NO\t");
-            }
-            if (!R2D2() || !C3PO() || !han() || !luke() || !chewy() || !leia()) {
+            radiocall(r2d2); //Trust me, this is way more concise than what I had before.
+            radiocall(c3po);
+            radiocall(han);
+            radiocall(luke);
+            radiocall(chewy);
+            radiocall(leia);
+            if (!r2d2 || !c3po || !han || !luke || !chewy || !leia) {
                 launch = false;
+                System.out.println("No launch.");
             } else {
+                launch = true;
+            }
+            if (run == 20 && yodamode) {
+                System.out.println("Yoda has used the Force to launch the Falcon.");
                 launch = true;
             }
         } while (!launch);
         System.out.println("We are GO for launch.");
-        long endtime = System.nanoTime();
-        System.out.println("Execution time is:");
+        final long endtime = System.nanoTime();
+        final long totaltime = (endtime - starttime) / 1000000000;
+        if (totaltime > 1) {
+            System.out.println("Execution time is:" + totaltime + " seconds.");
+        } else {
+            System.out.println("Execution time is: Less than 1 second.");
+        }
         System.out.println(endtime - starttime); //Duration of program
     }
+
+    public static void radiocall(boolean crew) {
+        if (crew) {
+            System.out.print("GO\t");
+        } else {
+            System.out.print("NO\t");
+        }
+    }
+
     public static boolean R2D2() {
         Random rand = new Random();
         int value = rand.nextInt(101);
