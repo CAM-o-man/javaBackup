@@ -49,7 +49,7 @@ public class Main {
         int amount = input.nextInt();
         for (int i = 0; i < amount; i++) {
             outputStream.write(Integer.toString(randgen.nextInt()).getBytes()); //Ridiculously convoluted, I know
-            outputStream.write("\n".getBytes());
+            outputStream.write(System.lineSeparator().getBytes());
         }
             /*dos.writeUTF(Integer.toString(randgen.nextInt())); //Will write several special characters in midst of file, must fix.
         }
