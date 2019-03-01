@@ -9,9 +9,9 @@ public class Main {
         File create = new File("create.txt"); //Should use a relative path and put it in createFiles/src/hendricks/lab71/create.txt
         FileOutputStream outputStream = new FileOutputStream(create);
         String name = "Connor McDermid";
-        String course = "Java";
-        String grades = "B, B, B";
-        String teacher = "Hendricks";
+        String course = "Java\n";
+        String grades = "B, B, B\n";
+        String teacher = "Hendricks\n";
         byte[] nameBytes = name.getBytes();
         byte[] courseBytes = course.getBytes();
         byte[] gradeBytes = grades.getBytes();
@@ -44,14 +44,15 @@ public class Main {
         Scanner input = new Scanner(System.in);
         Random randgen = new Random();
         File numbers = new File("numbers.txt");
-        BufferedReader br = new BufferedReader(new FileReader(numbers));
         FileOutputStream outputStream = new FileOutputStream(numbers);
-        DataOutputStream dos = new DataOutputStream(outputStream); //Required to write integers.
         System.out.println("Please input the amount of random numbers to be generated.");
         int amount = input.nextInt();
         for (int i = 0; i < amount; i++) {
-            dos.writeUTF(Integer.toString(randgen.nextInt())); //Will write several special characters in midst of file, must fix.
-        } //TODO: Fix special characters in file
+            outputStream.write(Integer.toString(randgen.nextInt()).getBytes()); //Ridiculously convoluted, I know
+            outputStream.write("\n".getBytes());
+        }
+            /*dos.writeUTF(Integer.toString(randgen.nextInt())); //Will write several special characters in midst of file, must fix.
+        }
         String content = "";
         String line = br.readLine();
         while (line != null) {
@@ -62,7 +63,7 @@ public class Main {
             if (Character.isAlphabetic(object) || Character.isUnicodeIdentifierPart(object)) { //isUnicodeIdentifierPart might be wrong
 
             }
-        }
+        }*/
     }
 
 }
