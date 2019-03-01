@@ -1,7 +1,5 @@
 package hendricks.lab71;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -40,15 +38,31 @@ public class Main {
                outputStream.write(userBytes);
            }
         } while (true);
+        numbers();
     }
-    public static void numbers() {
+    public static void numbers() throws IOException {
         Scanner input = new Scanner(System.in);
-        Random rand = new Random();
+        Random randgen = new Random();
         File numbers = new File("numbers.txt");
+        BufferedReader br = new BufferedReader(new FileReader(numbers));
         FileOutputStream outputStream = new FileOutputStream(numbers);
-        System.out.println("Please input the amout of random numbers to be generated.");
+        DataOutputStream dos = new DataOutputStream(outputStream); //Required to write integers.
+        System.out.println("Please input the amount of random numbers to be generated.");
         int amount = input.nextInt();
-        
+        for (int i = 0; i < amount; i++) {
+            dos.writeUTF(Integer.toString(randgen.nextInt())); //Will write several special characters in midst of file, must fix.
+        } //TODO: Fix special characters in file
+        String content = "";
+        String line = br.readLine();
+        while (line != null) {
+            content = content + line + " ";
+            line = br.readLine();
+        }
+        for (Character object: content.toCharArray()) {
+            if (Character.isAlphabetic(object) || Character.isUnicodeIdentifierPart(object)) { //isUnicodeIdentifierPart might be wrong
+
+            }
+        }
     }
 
 }
