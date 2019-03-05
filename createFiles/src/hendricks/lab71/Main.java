@@ -4,6 +4,13 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
+    /**
+     * Connor McDermid
+     * Lab 7.1
+     * Extra: System-specific line breaks
+     * @param args
+     * @throws IOException
+     */
 
     public static void main(String[] args) throws IOException {
         File create = new File("create.txt"); //Should use a relative path and put it in createFiles/src/hendricks/lab71/create.txt
@@ -35,7 +42,8 @@ public class Main {
                break;
            } else {
                userBytes = userinput.getBytes();
-               outputStream.write(userBytes);
+               outputStream.write(userBytes); //Should append the information.
+               outputStream.write(System.lineSeparator().getBytes());
            }
         } while (true);
         numbers();
@@ -45,6 +53,7 @@ public class Main {
         Random randgen = new Random();
         File numbers = new File("numbers.txt");
         FileOutputStream outputStream = new FileOutputStream(numbers);
+        //DataOutputStream dos = new DataOutputStream(outputStream);
         System.out.println("Please input the amount of random numbers to be generated.");
         int amount = input.nextInt();
         for (int i = 0; i < amount; i++) {
