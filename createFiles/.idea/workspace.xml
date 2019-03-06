@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a433a522-1925-44a5-9b70-73c43e06c5eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../readFiles/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hendricks/lab71/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hendricks/lab71/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create.txt" beforeDir="false" afterPath="$PROJECT_DIR$/create.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/numbers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/createFiles/hendricks/lab71/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/createFiles/hendricks/lab71/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payroll.txt" beforeDir="false" afterPath="$PROJECT_DIR$/payroll.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../readFiles/src/hendricks/lab72/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../readFiles/src/hendricks/lab72/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +21,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hendricks/lab71/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
+            <state relative-caret-position="-483">
               <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -133,7 +137,7 @@
       <workItem from="1551458605387" duration="4003000" />
       <workItem from="1551483241940" duration="1360000" />
       <workItem from="1551790905684" duration="463000" />
-      <workItem from="1551791449428" duration="560000" />
+      <workItem from="1551791449428" duration="1070000" />
     </task>
     <task id="LOCAL-00001" summary="Began new lab.">
       <created>1551277087375</created>
@@ -181,12 +185,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8804000" />
+    <option name="totallyTimeSpent" value="9314000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27010724" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27010724" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -231,18 +236,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="changed \n in the files for System.lineSeparator()" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/payroll.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/create.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/numbers.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/payroll.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hendricks/lab71/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="-483">
           <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />

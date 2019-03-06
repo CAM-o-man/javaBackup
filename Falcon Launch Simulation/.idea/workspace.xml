@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3adf889-8eb4-4d00-b553-f3b45493ae96" name="Default Changelist" comment="" />
+    <list default="true" id="e3adf889-8eb4-4d00-b553-f3b45493ae96" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../createFiles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../createFiles/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../createFiles/create.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../createFiles/create.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../createFiles/numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../createFiles/numbers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../createFiles/out/production/createFiles/hendricks/lab71/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../createFiles/out/production/createFiles/hendricks/lab71/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../createFiles/payroll.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../createFiles/payroll.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../readFiles/src/hendricks/lab72/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../readFiles/src/hendricks/lab72/Main.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hendricks/lab66/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,9 +54,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -57,6 +64,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551273191645" />
     <property name="extract.method.default.visibility" value="public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RunDashboard">
@@ -104,6 +112,7 @@
       <workItem from="1551120974137" duration="828000" />
       <workItem from="1551271898303" duration="1882000" />
       <workItem from="1551273997458" duration="382000" />
+      <workItem from="1551905779307" duration="557000" />
     </task>
     <task id="LOCAL-00001" summary="Finished several labs and began the Falcon Launch Simulation lab.">
       <created>1551123851826</created>
@@ -123,12 +132,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6831000" />
+    <option name="totallyTimeSpent" value="7388000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26675603" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27010724" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -138,7 +148,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33333334" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39941263" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -212,8 +222,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/hendricks/lab66/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
