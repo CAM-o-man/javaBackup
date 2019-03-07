@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da59ac5b-2f91-4fba-9b99-497daf8d82ad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Falcon Launch Simulation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Falcon Launch Simulation/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../createFiles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../createFiles/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hendricks/lab72/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hendricks/lab72/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hendricks/lab72/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="56" column="58" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="58" />
+            <state relative-caret-position="506">
+              <caret line="22" column="114" selection-start-line="22" selection-start-column="114" selection-end-line="22" selection-end-column="114" />
             </state>
           </provider>
         </entry>
@@ -47,7 +49,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -70,13 +71,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551792642417" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551967146482" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Falcon Launch Simulation" />
   </component>
   <component name="RunDashboard">
@@ -121,7 +123,8 @@
       <workItem from="1551791369817" duration="1323000" />
       <workItem from="1551904069040" duration="731000" />
       <workItem from="1551906340499" duration="447000" />
-      <workItem from="1551963696359" duration="3157000" />
+      <workItem from="1551963696359" duration="3487000" />
+      <workItem from="1551967770712" duration="45000" />
     </task>
     <task id="LOCAL-00001" summary="Began new lab and finished extra on old lab.">
       <created>1551792049567</created>
@@ -144,11 +147,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551965947081</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Caught some NullPointerExceptions">
+      <created>1551966890196</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1551966890197</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5658000" />
+    <option name="totallyTimeSpent" value="6033000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -161,19 +171,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2600536" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26340482" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32892805" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32892805" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39941263" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -182,8 +190,9 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32892805" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -202,7 +211,8 @@
     <MESSAGE value="Began new lab and finished extra on old lab." />
     <MESSAGE value="lol" />
     <MESSAGE value="Yeeted some NullPointerExceptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Yeeted some NullPointerExceptions" />
+    <MESSAGE value="Caught some NullPointerExceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Caught some NullPointerExceptions" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -238,8 +248,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/hendricks/lab72/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="56" column="58" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="58" />
+        <state relative-caret-position="506">
+          <caret line="22" column="114" selection-start-line="22" selection-start-column="114" selection-end-line="22" selection-end-column="114" />
         </state>
       </provider>
     </entry>

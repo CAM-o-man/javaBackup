@@ -20,7 +20,7 @@ public class Main {
         System.out.println("His last 3 grades in this course were: " + grades);
         payroll();
     }
-    public static void payroll() throws Exception {
+    public static void payroll() throws Exception { //Don't know what needs this declaration but *something* does.
         File payroll = new File("C:\\javaRepo\\createFiles\\payroll.txt");
         BufferedReader reader = new BufferedReader(new FileReader(payroll));
         String employee;

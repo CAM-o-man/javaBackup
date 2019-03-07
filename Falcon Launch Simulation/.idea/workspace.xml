@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Falcon Launch Simulation:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e3adf889-8eb4-4d00-b553-f3b45493ae96" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../createFiles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../createFiles/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../createFiles/create.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../createFiles/create.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../createFiles/numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../createFiles/numbers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../createFiles/out/production/createFiles/hendricks/lab71/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../createFiles/out/production/createFiles/hendricks/lab71/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../createFiles/payroll.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../createFiles/payroll.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../readFiles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../readFiles/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../readFiles/src/hendricks/lab72/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../readFiles/src/hendricks/lab72/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,7 +25,6 @@
         <entry file="file://$PROJECT_DIR$/src/hendricks/lab66/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret lean-forward="true" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,8 +56,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
     </panes>
   </component>
@@ -65,6 +67,9 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551273191645" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RunDashboard">
@@ -113,6 +118,7 @@
       <workItem from="1551271898303" duration="1882000" />
       <workItem from="1551273997458" duration="382000" />
       <workItem from="1551905779307" duration="557000" />
+      <workItem from="1551967101432" duration="64000" />
     </task>
     <task id="LOCAL-00001" summary="Finished several labs and began the Falcon Launch Simulation lab.">
       <created>1551123851826</created>
@@ -132,13 +138,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7388000" />
+    <option name="totallyTimeSpent" value="7452000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27010724" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27345845" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -223,12 +229,88 @@
     <entry file="file://$PROJECT_DIR$/src/hendricks/lab66/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret lean-forward="true" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>Falcon Launch Simulation:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Falcon Launch Simulation</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
