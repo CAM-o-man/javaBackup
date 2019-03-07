@@ -1,3 +1,3 @@
-Connor McDermid       Paid: 0$   Hours worked: 0
-Frank Gomes           Paid: 100000 Hours worked: 144
-Tejas Metha           Paid: $100000 Hours worked: 140
+Connor McDermid, $0
+Tejas Metha, $60000
+Frank Gomes, $1000000

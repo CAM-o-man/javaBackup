@@ -27,6 +27,7 @@ public class Main {
         outputStream.write(courseBytes);
         outputStream.write(gradeBytes);
         outputStream.write(teacherBytes);
+        System.out.println(create.getAbsolutePath());
         payroll();
     }
     public static void payroll() throws IOException{
@@ -46,6 +47,7 @@ public class Main {
                outputStream.write(System.lineSeparator().getBytes());
            }
         } while (true);
+        System.out.println(payroll.getAbsolutePath());
         numbers();
     }
     public static void numbers() throws IOException {
@@ -60,6 +62,7 @@ public class Main {
             outputStream.write(Integer.toString(randgen.nextInt()).getBytes()); //Ridiculously convoluted, I know
             outputStream.write(System.lineSeparator().getBytes());
         }
+        System.out.println(numbers.getAbsolutePath());
             /*dos.writeUTF(Integer.toString(randgen.nextInt())); //Will write several special characters in midst of file, must fix.
         }
         String content = "";
