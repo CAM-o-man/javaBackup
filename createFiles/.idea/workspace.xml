@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a433a522-1925-44a5-9b70-73c43e06c5eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/numbers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/createFiles/hendricks/lab71/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/createFiles/hendricks/lab71/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payroll.txt" beforeDir="false" afterPath="$PROJECT_DIR$/payroll.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hendricks/lab71/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hendricks/lab71/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../readFiles/.idea/dictionaries/cam_o.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../readFiles/.idea/dictionaries/cam_o.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../readFiles/src/hendricks/lab72/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../readFiles/src/hendricks/lab72/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
