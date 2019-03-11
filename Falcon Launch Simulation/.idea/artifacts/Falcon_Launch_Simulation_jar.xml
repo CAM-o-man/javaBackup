@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Falcon Launch Simulation:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Falcon_Launch_Simulation_jar</output-path>
+    <root id="archive" name="Falcon Launch Simulation.jar">
+      <element id="module-output" name="Falcon Launch Simulation" />
+    </root>
+  </artifact>
+</component>
