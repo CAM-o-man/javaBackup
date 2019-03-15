@@ -5,16 +5,33 @@ import java.awt.Desktop;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.io.IOException;
+
+/**
+ * Database is my personal repository of useful methods.
+ */
 public class database {
+    /**
+     * Provides Database constructor
+     */
     public database() {
-        asterisks(); //TODO: Expand further on database, include more useful functions
+        //TODO: Expand further on database, include more useful functions
     }
 
-    public void asterisks() {
-        for (int i = 0; i < 16; i++) {
+    /**
+     * Takes an argument of the length of the string of asterisks and prints that many.
+     * @param length
+     */
+    public void asterisks(int length) {
+        for (int i = 0; i < length; i++) {
             System.out.print("*");
         }
     }
+
+    /**
+     * Takes an argument of cents and returns the same value in dollars
+     * @param cents
+     * @return
+     */
     public String toDollars(int cents) {
         int dollars = 0;
         while(true) {
@@ -31,6 +48,10 @@ public class database {
         return (dollarString + "." + centsString);
 
     }
+
+    /**
+     * Prints an open triangle figure made of ampersands
+     */
     public static void otri() {
         System.out.print("\n");
         for (int i = 0; i < 5; i++) {
@@ -69,11 +90,22 @@ public class database {
             System.out.print("\n");
         }
     }
+
+    /**
+     * Takes an integer value as an argument and prints that number of spaces
+     * @param x
+     */
     public static void spaces(int x) {
         for (int i = 0; i < x; i++) {
             System.out.print(" ");
         }
     }
+
+    /**
+     * Takes an argument of integers and prints out that many characters of the specified type
+     * @param x
+     * @param chara
+     */
     public static void chars(int x, int chara) {
         char pchar;
         switch (chara) {
@@ -101,6 +133,13 @@ public class database {
             System.out.print(pchar);
         }
     }
+
+    /**
+     * Takes a url argument as a string and opens the client's browser to navigate to that page.
+     * @param url
+     * @throws URISyntaxException
+     * @throws IOException
+     */
     public static void navWeb(String url) throws URISyntaxException, IOException {
         Desktop dtop = Desktop.getDesktop();
         dtop.browse(new URI(url));

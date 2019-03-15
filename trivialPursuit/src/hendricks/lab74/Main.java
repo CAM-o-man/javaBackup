@@ -1,13 +1,26 @@
 package hendricks.lab74;
 
+import java.net.URISyntaxException;
 import java.util.Scanner;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
+import mcdermid.connor.database;
 
+/**
+ * @author: Connor McDermid
+ * Lab: 7.4
+ * Extra: Random questions from question bank
+ */
 public class Main {
-
-    public static void main(String[] args) throws IOException, InterruptedException {
+    /**
+     * This will serve as the user interface method. All user interaction will occur here.
+     * @param args
+     * @throws IOException
+     * @throws InterruptedException
+     */
+    public static void main(String[] args) throws IOException, InterruptedException, URISyntaxException {
+        database data = new database();
         Scanner input = new Scanner(System.in);
         File questionBank = new File("questionBank.txt");
         FileOutputStream appendstream = new FileOutputStream(questionBank, true);
@@ -16,6 +29,13 @@ public class Main {
         System.out.println("Welcome to Trivial Pursuit!");
         System.out.println("You will be asked 5 multiple-choice questions.");
         System.out.println("You will have 60 seconds to answer them all.");
+        System.out.println("Ready? [Y|N]");
+        String ready = input.nextLine();
+        if (ready.equalsIgnoreCase("Y")) {
+            System.out.println("Executing.");
+        } else {
+            System.exit(0);
+        }
         Thread.sleep(1000);
         System.out.println(3);
         Thread.sleep(1000);
@@ -52,6 +72,13 @@ public class Main {
                 }
             }
             System.out.println("That's all the questions! Your score was " + score + " out of 5!");
+            System.out.println("Would you like to see the source of all trivia questions here? [Y|N]");
+            String user = input.nextLine();
+            if (user.equalsIgnoreCase("Y")) {
+                data.navWeb("https://chartcons.com/100-good-trivia-questions-and-answers/");
+            } else {
+                System.exit(0);
+            }
         }
     }
     /**
