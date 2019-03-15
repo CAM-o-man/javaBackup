@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f141c29-be98-4fcb-8cc0-b31cbd5f1498" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../trivialPursuit/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="9f141c29-be98-4fcb-8cc0-b31cbd5f1498" name="Default Changelist" comment="JAVADOC!!!!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/.idea/artifacts/database_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/database.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/out/artifacts/database_jar/database.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/src/mcdermid/connor/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/src/mcdermid/connor/database.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hendricks/lab73/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+            <state relative-caret-position="368">
+              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,15 +57,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/hendricks/lab73/Main.java" />
         <option value="$PROJECT_DIR$/dog.txt" />
+        <option value="$PROJECT_DIR$/src/hendricks/lab73/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="951" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="950" />
+    <option name="width" value="979" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -60,8 +73,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -73,6 +84,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -82,7 +95,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551972359734" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552670414862" />
     <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RunDashboard">
@@ -129,6 +142,7 @@
       <workItem from="1552306138134" duration="45000" />
       <workItem from="1552650884520" duration="1644000" />
       <workItem from="1552655075095" duration="3000" />
+      <workItem from="1552668853487" duration="1595000" />
     </task>
     <task id="LOCAL-00001" summary="Finished 7.2, moving on">
       <created>1551968110494</created>
@@ -144,16 +158,23 @@
       <option name="project" value="LOCAL" />
       <updated>1552652368700</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="JAVADOC!!!!">
+      <created>1552670093339</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552670093339</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4041000" />
+    <option name="totallyTimeSpent" value="5636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26340482" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26675603" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -162,7 +183,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32892805" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39941263" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -191,7 +212,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished 7.2, moving on" />
     <MESSAGE value="Finished 7.3 and 6.8 test files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished 7.3 and 6.8 test files" />
+    <MESSAGE value="JAVADOC!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="JAVADOC!!!!" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../Functions(Methods)/src/com/company/Main.java">
@@ -205,8 +227,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hendricks/lab73/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        <state relative-caret-position="368">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
