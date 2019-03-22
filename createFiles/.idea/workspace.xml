@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a433a522-1925-44a5-9b70-73c43e06c5eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../arrayLab/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../arrayLab/arrayLab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binarySearch/.idea/dictionaries/cam_o.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binarySearch/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bubbleSort/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../database/src/mcdermid/connor/Database/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../decoderring/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab83/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../personal/pythag/.idea/dictionaries/cam_o.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../personal/pythag/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../searchAlgorithm/.idea/vcs.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +24,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hendricks/lab71/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="667">
               <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -44,7 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -136,6 +143,7 @@
       <workItem from="1551791449428" duration="1070000" />
       <workItem from="1551964466013" duration="1084000" />
       <workItem from="1552944825514" duration="119000" />
+      <workItem from="1553199272045" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="Began new lab.">
       <created>1551277087375</created>
@@ -183,13 +191,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10517000" />
+    <option name="totallyTimeSpent" value="11116000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2774799" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28150135" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -256,7 +263,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hendricks/lab71/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="667">
           <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
