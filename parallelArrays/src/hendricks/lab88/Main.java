@@ -6,8 +6,16 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;
 
+/**
+ * @author Connor McDermid
+ * Lab 8.8
+ * Extra: Two-Dimensional Arrays, Comparators, Regexes
+ */
 public class Main {
-
+    /**
+     * Contains the master array, as well as user interaction code.
+     * @param args N/A
+     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String[][] data = new String[][] {
@@ -36,43 +44,61 @@ public class Main {
         } else {
             System.out.println("That's not valid.");
         }
-        System.out.println(Arrays.deepToString(data));
+        for (String[] array: data) {
+            for (String string: array) {
+                System.out.print(string);
+                System.out.print(" - ");
+            }
+            System.out.print("\n");
+        }
     }
 
-
+    /**
+     * Sorts the array by the last name of the associated person.
+     * @param data The two-dimensional array, sorted so that the first element of every element is the name.
+     * @return Returns the array, sorted by name.
+     */
     @Contract("_ -> param1")
     private static String[][] byLastName(String[][] data) {
         Comparator<String[]> comparator = (o1, o2) -> {
-            //Get the name
+
             String s1 = String.valueOf(o1[0]);
             String s2 = String.valueOf(o2[0]);
-            String lastNameOne = s1.substring(s1.indexOf(' '));
-            String lastNameTwo = s2.substring(s1.indexOf(' '));
-            char lastInit = lastNameOne.charAt(1);
-            char lastInit2 = lastNameTwo.charAt(1);
-            return Character.compare(lastInit, lastInit2);
+            return s1.compareTo(s2);
         };
         Arrays.sort(data, comparator);
         return data;
     }
+
+    /**
+     * Sorts the array by city.
+     * @param data The two-dimensional array, sorted so that the second element of every element is the city.
+     * @return Returns the array, sorted by city.
+     */
     @Contract("_ -> param1")
     private static String[][] byCity(String[][] data) {
         Comparator<String[]> comparator = (o1, o2) -> {
             //Get the city and state name
             String s1 = String.valueOf(o1[1]);
             String s2 = String.valueOf(o2[1]);
-            return s1.compareTo(s2);
+            return s1.replaceAll("\\d", "").compareTo(s2.replaceAll("\\d", ""));
         };
         Arrays.sort(data, comparator);
         return data;
     }
+
+    /**
+     * Sorts the array based on the zipcode.
+     * @param data The two-dimensional array, sorted so that the address, including zipcode, is in the 3rd element of each element.
+     * @return The same array, sorted by zip code.
+     */
+    @Contract("_ -> param1")
+    @SuppressWarnings("Duplicates")
     private static String[][] byZipCode(String[][] data) {
         Comparator<String[]> comparator = (o1, o2) -> {
             //Get zipcode
-            String s1 = String.valueOf(o1[3]);
-            String s2 = String.valueOf(o2[3]);
-            String zipcodeOne = s1.substring(s1.indexOf(' ')).substring(s1.indexOf(' '));
-            String zipcodeTwo = s2.substring(s2.indexOf(' ')).substring(s2.indexOf(' '));
+            String zipcodeOne = o1[2].replaceAll("\\D+", "");
+            String zipcodeTwo = o2[2].replaceAll("\\D+", "");
             int zipOne = Integer.parseInt(zipcodeOne);
             int zipTwo = Integer.parseInt(zipcodeTwo);
             if (zipOne > zipTwo) {
