@@ -188,4 +188,33 @@ public class Database {
             return returnValue;
         }
     }
+
+    /**
+     * This Binary Search algorithm puts strings in alphabetical order.
+     * @param array THe String array to be searched.
+     * @param min The lower bound of the array.
+     * @param max The upper bound of the array.
+     * @param key The search term.
+     * @return The index of the search term in the array.
+     */
+    public static int binarySearch(String[] array, int min, int max, String key) {
+        int position;
+        position = (min + max) / 2;
+
+        while (!array[position].equals(key) && min <= max) {
+            if (array[position].equalsIgnoreCase(key)) {
+                break; //Again, under this condition loop will break anyway. Still don't trust them.
+            } else if (array[position].compareTo(key) < 0) {
+                min = position + 1;
+            } else if (array[position].compareTo(key) > 0) {
+                max = position - 1;
+            }
+            position = (min + max) / 2;
+        }
+        if (min <= max) {
+            return position;
+        } else {
+            return -1;
+        }
+    }
 }
