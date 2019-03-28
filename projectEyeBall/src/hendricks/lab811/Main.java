@@ -1,7 +1,7 @@
 package hendricks.lab811;
 
-import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class Main {
 
@@ -22,7 +22,7 @@ public class Main {
         Person sanay = new Person*/
         Person[] people = new Person[10];
 
-        String[][] customers = new String[][] { //TODO: Fill array
+        String[][] customers = new String[][] { // I made this first and realised it was terribly inefficient.
                 {"Gomes, Frank", "83193810", "0000001", "5", "3"},
                 {"Mehta, Tejas", "42746829", "0000002", "1", "0"},
                 {"Daptardar, Sanay", "7832", "0000003", "5", "9"},
@@ -52,16 +52,17 @@ public class Main {
                             people[i].code = Integer.parseInt(arr[j]);
                             break;
                         case 4:
-                            people[i].code = Integer.parseInt(arr[j]);
+                            people[i].day = Integer.parseInt(arr[j]);
                             break;
                         default:
                             System.out.println("Main.main");
-                            System.out.println("An error has occured.");
+                            System.out.println("An error has occurred.");
                             System.exit(-10);
                     }
                 }
             }
         }
+
         /*
         String[] clients = new String[] {
                 "Gomes, Frank",
@@ -123,30 +124,40 @@ public class Main {
                 10,
                 2
         };*/
-        boolean[] late = new boolean[10];
 
-        boolean thief;
-        for (int i = 0; i < 10; i++) {
-            if(days[i] > codes[i]) {
-                late[i] = true;
-            } else {
-                late[i] = false;
+        //Process data:
+        int counter = 0;
+        for (Person person: people) {
+            if (person.isLate()) {
+                counter++;
+            }
+        }
+        System.out.println(counter + " people are late.");
+        Comparator<Person> comp = Comparator.comparingInt(o -> o.cid);
+        Arrays.sort(people, comp);
+        System.out.println("People who are late:");
+        for (Person person: people) {
+            if (person.isLate()) {
+                System.out.println(person.name);
+            }
+        }
+        System.out.println("People who are not late:");
+        for (Person person: people) {
+            if (!person.isLate()) {
+                System.out.println(person.name);
             }
         }
     }
+
 }
-class Person {
-    public String name;
-    public int cid;
-    public int mid;
-    public int code;
-    public int day;
-    public static void Person() {}
-    public boolean isLate() {
-        if (day > code) {
-            return true;
-        } else {
-            return false;
-        }
+class Person { //Simple object for each customer
+    String name;
+    int cid; //Customer ID
+    int mid; //Movie ID
+    int code;
+    int day;
+    Person() {}
+    boolean isLate() {
+        return day > code;
     }
 }
