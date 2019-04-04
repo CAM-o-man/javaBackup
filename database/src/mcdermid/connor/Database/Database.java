@@ -167,10 +167,8 @@ public class Database {
      * @return Returns an integer array with 2 values: the first being the index, the second the number of comparisons. If index is -1, the item was not found.
      */
 
-    public static int[] binarySearch(int[] array, int min, int max, int key) {
-        int[] returnValue = new int[2];
+    public static int binarySearch(int[] array, int min, int max, int key) {
         int position;
-        int comparisons = 0;
 
         position = (min + max) / 2;
 
@@ -183,15 +181,12 @@ public class Database {
                 break;       //Yes, technically under this condition the loop will break anyway, but I don't trust while loops.
             }
             position = (max + min) / 2;
-            comparisons++;
         }
         if (min <= max) {
-            returnValue[0] = position;
-            returnValue[1] = comparisons;
-            return returnValue;
+
+            return position;
         } else {
-            returnValue[0] = position;
-            return returnValue;
+            return position;
         }
     }
 
@@ -246,6 +241,11 @@ public class Database {
         return array;
     }
 
+    /**
+     * A classic Bubble Sort algoritm that sorts an integer array into descending order.
+     * @param array The integer array to be sorted
+     * @return The sorted integer array
+     */
     @SuppressWarnings("Duplicates")
     public int[] bubbleSort(int[] array) {
         int temp;
@@ -264,8 +264,14 @@ public class Database {
                 }
             }
         } while (swapped);
+        return array;
     }
 
+    /**
+     * A classic Bubble Sort algorithm that sorts a double array into descending order.
+     * @param array The double array to be sorted.
+     * @return The sorted double array.
+     */
     @SuppressWarnings("Duplicates")
     public double[] bubbleSort(double[] array) {
         double temp;
@@ -283,7 +289,8 @@ public class Database {
                     }
                 }
             }
-        }
+        } while (swapped);
+        return array;
     }
 
     public char[] bubbleSort(char[] array) {
@@ -292,7 +299,7 @@ public class Database {
         do {
             for (int t = 0; t < array.length - 1; t++) {
                 for (int i = 0; i < array.length - t - 1; i++) {
-                    if (Character.compare(array[i + 1], array[i]) < 0) {
+                    if (array[i + 1] < array[i]) {
                         temp = array[i];
                         array[i] = array[i + 1];
                         array[i + 1] = temp;

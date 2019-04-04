@@ -41,7 +41,7 @@ public class Main {
         System.out.println();
 
         //Search reeves for space, print last, first
-        System.out.println(reeves.substring(reeves.indexOf(" ")));
+        System.out.print(reeves.substring(reeves.indexOf(" ")));
         System.out.print(", ");
         System.out.print(reeves.substring(0, reeves.indexOf(" ")));
 
