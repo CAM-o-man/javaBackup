@@ -63,11 +63,7 @@ public class Main {
             }
             iterator++;
         }
-        if (sums[0] == sums[1] && sums[1] == sums[2] && sums[2] == sums[3]) {
-            return true;
-        } else {
-           return false;
-        }
+        return sums[0] == sums[1] && sums[1] == sums[2] && sums[2] == sums[3];
 
     }
 }
