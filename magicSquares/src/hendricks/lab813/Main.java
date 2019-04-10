@@ -66,9 +66,7 @@ public class Main {
         if (sums[0] == sums[1] && sums[1] == sums[2] && sums[2] == sums[3]) {
             return true;
         } else {
-           if (sums[0] == sums[1]) {
-                //TODO: Finish
-           }
+           return false;
         }
 
     }
