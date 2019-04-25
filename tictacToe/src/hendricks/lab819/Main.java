@@ -37,8 +37,8 @@ public class Main {
     }
     @SuppressWarnings("Duplicates")
     private static void playerOne(char[][] grid, Scanner input) {
-        int x = 0;
-        int y = 0;
+        int x;
+        int y;
             System.out.println("Updated grid:");
             halter(grid);
             x = input.nextInt();
