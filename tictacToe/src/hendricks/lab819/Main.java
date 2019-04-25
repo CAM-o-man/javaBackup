@@ -39,15 +39,10 @@ public class Main {
     private static void playerOne(char[][] grid, Scanner input) {
         int x = 0;
         int y = 0;
-        try {
             System.out.println("Updated grid:");
             halter(grid);
             x = input.nextInt();
             y = input.nextInt();
-        } catch (runOutOfSpaceException | winnerException e) {
-            System.out.println(e.getMessage());
-            //TODO: Fill in completion code
-        }
         if (grid[x][y] == ' ') {
             grid[x][y] = 'X';
             System.out.println("New grid:");
@@ -84,7 +79,7 @@ public class Main {
 
     private static void halter(char[][] grid) {
         try {
-            int win = displayGrid(grid);
+             displayGrid(grid);
         } catch (runOutOfSpaceException | winnerException e) {
             if (e.getClass().getSimpleName().equals("runOutOfSpaceException")) {
                 System.out.println("DRAW!");
@@ -94,31 +89,31 @@ public class Main {
         }
     }
 
-    private static int displayGrid(char[][] grid) throws runOutOfSpaceException, winnerException {
+    private static void displayGrid(char[][] grid) throws runOutOfSpaceException, winnerException {
         //could use loops but hardcoding will make it look better.
-        /*for (char[] row: grid) { Probably better without the redundant print
+        for (char[] row: grid) {
             System.out.println(Arrays.toString(row));
-        }*/
-        int win = checkWinner(grid);
+        }
+        int win;
+        try {
+            win = checkWinner(grid);
+        } catch (winnerException e) {
+            throw new winnerException(e.playerWon);
+        }
         if (grid[0][0] != ' ' && grid[0][1] != ' ' && grid[0][2] != ' ' && grid[1][0] != ' ' && grid[1][1] != ' ' && grid[1][2] != ' ' && grid[2][0] != ' ' && grid[2][1] != ' ' && grid[2][2] != ' ') {
 
             if (win == 0) {
-                throw new runOutOfSpaceException("You're run out of space but there's no winner");
-            } else if (win == 1) {
-                throw new winnerException(1);
-            } else {
-                throw new winnerException(2);
+                throw new runOutOfSpaceException("You're run out of space but there's no winner!");
             }
         }
-        return win;
     }
-    private static int checkWinner(char[][] grid) {
+    private static int checkWinner(char[][] grid) throws winnerException {
         for (char[] row: grid) {
             if(row[0] == row[1] && row[1] == row[2] && row[0] != 0) {
                 if (row[0] == 'X') {
-                    return 1;
+                    throw new winnerException(1);
                 } else if (row[0] == 'O') {
-                    return 2;
+                    throw new winnerException(2);
                 } else {
                     //noinspection UnnecessaryContinue
                     continue;
@@ -130,33 +125,33 @@ public class Main {
         }
         if (grid[0][0] == grid[1][0] && grid[1][0] == grid[2][0] && grid[0][0] != ' ' && grid[0][0] != 0) {
             if (grid[0][0] == 'X') {
-                return 1;
+                throw new winnerException(1);
             } else {
-                return 2;
+                throw new winnerException(2);
             }
-        } else if (grid[0][1] == grid[1][1] && grid[1][1] == grid[2][1] && grid[0][1] != 0) {
+        } else if (grid[0][1] == grid[1][1] && grid[1][1] == grid[2][1] && grid[0][1] != ' ') {
             if (grid[0][1] == 'X') {
-                return 1;
+                throw new winnerException(1);
             } else {
-                return 2;
+                throw new winnerException(2);
             }
-        } else if (grid[0][2] == grid[1][2] && grid[1][2] == grid[2][2] && grid[0][2] != 0) {
+        } else if (grid[0][2] == grid[1][2] && grid[1][2] == grid[2][2] && grid[0][2] != ' ') {
             if (grid[0][2] == 'X') {
-                return 1;
+                throw new winnerException(1);
             } else {
-                return 2;
+                throw new winnerException(2);
             }
-        } else if (grid[0][0] == grid[1][1] && grid[2][2] == grid[1][1] && grid[0][0] != 0) {
+        } else if (grid[0][0] == grid[1][1] && grid[2][2] == grid[1][1] && grid[0][0] != ' ') {
             if (grid[0][0] == 'X') {
-                return 1;
+                throw new winnerException(1);
             } else {
-                return 2;
+                throw new winnerException(2);
             }
-        } else if (grid[0][2] == grid[1][1] && grid[1][1] == grid[2][0] && grid[0][2] != 0) {
+        } else if (grid[0][2] == grid[1][1] && grid[1][1] == grid[2][0] && grid[0][2] != ' ') {
             if (grid[0][2] == 'X') {
-                return 1;
+                throw new winnerException(1);
             } else {
-                return 2;
+                throw new winnerException(2);
             }
         } else {
             return 0;
@@ -171,7 +166,9 @@ class runOutOfSpaceException extends Exception {
 }
 
 class winnerException extends Exception {
+    int playerWon;
     winnerException(int player) {
+        playerWon = player;
         if (player == 1) {
             System.out.println("Player 1 wins. Gameplay should cease.");
         } else if (player == 2) {
