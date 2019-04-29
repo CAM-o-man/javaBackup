@@ -28,22 +28,19 @@ public class Main {
         BufferedReader lastnumReader = new BufferedReader(new FileReader(lastnum));
         BufferedReader firstnameReader = new BufferedReader(new FileReader(firstname));
         BufferedReader firstnumReader = new BufferedReader(new FileReader(firstnum));
-        BufferedReader counter = new BufferedReader(new FileReader(lastname));
-        boolean whileLinesRemain = true;
         /* THis next section might be somewhat inefficient, but this was the best way I thought to minimise sloppy
             exception catching.
          */
-        int lines = 26; //While you didn't say 
-        counter.close(); //Don't want to have to deal with that anymore.
+        int lines = 25; //While you didn't say we didn't know the file sizes.
         String[] lastNames = new String[lines];
         String[] firstNames = new String[lines];
-        int[] lastNums = new int[lines];
-        int[] firstNums = new int[lines];
+        String[] lastNums = new String[lines];
+        String[] firstNums = new String[lines];
         for (int i = 0; i < lines; i++) {
             lastNames[i] = lastnameReader.readLine();
-            lastNums[i] = Integer.parseInt(lastnumReader.readLine());
+            lastNums[i] = lastnumReader.readLine();
             firstNames[i] = firstnameReader.readLine();
-            firstNums[i] = Integer.parseInt(firstnumReader.readLine());
+            firstNums[i] = firstnumReader.readLine();
         }
         //Data is now stored
         Ticket[] completes;
@@ -70,14 +67,35 @@ public class Main {
      * @param lastNames The name on the last ticket half
      * @return Returns an array of Tickets, which contain the complete number and complete name
      */
-    private static Ticket[] parser(int[] firstnum, int[] lastnum, String[] firstNames, String[] lastNames) {
+    private static Ticket[] parser(String[] firstnum, String[] lastnum, String[] firstNames, String[] lastNames) {
         HalfTicket[] firstHalves = new HalfTicket[firstNames.length];
         HalfTicket[] lastHalves = new HalfTicket[lastNames.length];
         for (int i = 0; i < firstNames.length; i++) {
             firstHalves[i] = new HalfTicket(firstnum[i], firstNames[i]);
             lastHalves[i] = new HalfTicket(lastnum[i], lastNames[i]);
         }
-        Comparator<HalfTicket> comp = Comparator.comparingInt(o -> o.number);
+        System.out.println(Integer.parseInt(firstHalves[0].number));
+        Comparator<HalfTicket> comp = new Comparator<HalfTicket>() {
+            @Override
+            public int compare(HalfTicket o1, HalfTicket o2) {
+                int i2 = 0;
+                int i1 = 0;
+                try {
+                    System.out.println(o1.number);
+                    i1 = Integer.parseInt(o1.number);
+                    i2 = Integer.parseInt(o2.number);
+                } catch (NumberFormatException e) {
+                    i1 = 39;
+                }
+                if (i1 == i2) {
+                    return 0;
+                } else if (i1 > i2) {
+                    return 1;
+                } else {
+                    return 1;
+                }
+            }
+        };
         Arrays.sort(firstHalves, comp);
         Arrays.sort(lastHalves, comp);
 
@@ -133,7 +151,7 @@ public class Main {
  * A HalfTicket object will be an amalgamation of the first Name and Number, or last Name and Number.
  */
 class HalfTicket {
-    final int number;
+    final String number;
     final String name;
 
     /**
@@ -141,7 +159,7 @@ class HalfTicket {
      * @param number The number, read directly from a file
      * @param name The name, read directly from file.
      */
-    HalfTicket (int number, String name) {
+    HalfTicket (String number, String name) {
         this.number = number;
         this.name = name;
     }
@@ -160,7 +178,7 @@ class Ticket {
      * @param last The last HalfTicket, representing the last half of the ticket.
      */
     Ticket (HalfTicket first, HalfTicket last) {
-        this.number = Integer.parseInt(first.number + Integer.toString(last.number));
+        this.number = Integer.parseInt(first.number + last.number);
         this.name = first.name + last.name;
     }
 
