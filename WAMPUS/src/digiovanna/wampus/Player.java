@@ -63,8 +63,6 @@ public class Player {
                 Chamber test = map[x + 1][y];
             } catch (IndexOutOfBoundsException | NullPointerException f) {
                 System.out.println("The chamber above you is blocked by a cave-in.");
-            } finally {
-                System.out.println("The chamber below you is blocked by a cave-in.");
             }
         }
         try {
@@ -79,9 +77,11 @@ public class Player {
                 Chamber test = map[x + 1][y];
             } catch (IndexOutOfBoundsException | NullPointerException f) {
                 System.out.println("The chamber above you is blocked by a cave-in.");
-            } finally {
-                System.out.println("The chamber below you is blocked by a cave-in.");
             }
+        }
+        if (map[x][y].isExit) {
+            System.out.println("Congratulations! You win!");
+            System.exit(1000);
         }
     }
     void move(int x) {

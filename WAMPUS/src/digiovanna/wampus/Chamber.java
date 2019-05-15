@@ -10,6 +10,7 @@ public class Chamber {
     final boolean isWampusStart;
     boolean containsWampus;
     final boolean exists = true;
+    //boolean containsPlayer;
     Wampus wamp = null;
     Chamber (boolean haz, boolean x, boolean start, boolean pit, boolean bats, boolean discord, boolean wampus) {
         this.isHazard = haz;

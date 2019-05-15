@@ -23,7 +23,33 @@ public class DisplayGraphics extends JPanel {
         g.setColor(houseColour);
         g.fillRect(0, 20, 60, 20);
 
-        //TODO: Draw house windows and doors
-        //TODO: Complete the rest of the shapes.
+        g.setColor(Color.YELLOW);
+        g.drawRect(30, 25, 10, 15);
+        g.fillRect(30, 25, 10, 15);
+
+
+        g.fillRect(12, 25, 10, 10);
+        g.fillRect(45, 25, 10, 10);
+
+        g.setColor(Color.WHITE);
+
+        g.drawArc(100, 100, 30, 30, 0, 360);
+        g.drawArc(115, 115, 30, 30, 0, 360);
+        g.drawArc(130, 100, 30, 30, 0, 360);
+        g.drawArc(145, 115, 30, 30, 0, 360);
+        g.drawArc(160, 100, 30, 30, 0, 360);
+
+
+
+        g.setColor(new Color(224, 224, 56));
+        g.fillArc(200, 200, 100, 50, 0, 360);
+        g.setColor(Color.GREEN);
+        g.fillArc(250, 210, 5, 30, 0, 360);
+        g.setColor(Color.BLUE);
+        g.fillArc(225, 212, 10, 10, 0, 360);
+        g.fillArc(265, 212, 10, 10, 0, 360);
+        g.setColor(new Color(173, 98, 13));
+        g.fillArc(225, 230, 50, 10, 0, -180);
+
     }
 }

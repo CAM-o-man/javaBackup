@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
         Player protag = null;
-        Random rand = new Random();
+        Random ayn = new Random();
         Scanner input = new Scanner(System.in);
         //Will build a 2-D array of Chamber objects
         int hazards = 4;
@@ -23,22 +23,22 @@ public class Main {
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 2; j++) {
                 if (hazards > 0 && !pit) {
-                    if (rand.nextBoolean()) {
+                    if (ayn.nextBoolean()) {
                         map[i][j] = new Chamber(true, false, false, false, true, false, false);
                         hazards--;
                     }
                 } else if (hazards > 0 && pit) {
-                    if (rand.nextBoolean()) {
+                    if (ayn.nextBoolean()) {
                         map[i][j] = new Chamber(true, false, false, true, false, false, false);
                         pit = false;
                         hazards--;
-                    } else if (rand.nextBoolean()) {
+                    } else if (ayn.nextBoolean()) {
                         map[i][j] = new Chamber(true, false, false, false, true, false, false);
                         hazards--;
                     }
                 } else {
                     if (unfilledStart) {
-                        if (rand.nextBoolean()) {
+                        if (ayn.nextBoolean()) {
                             map[i][j] = new Chamber(false, false, true, false, false, false, false);
                             unfilledStart = false;
                             int[] temp = { i, j };
@@ -46,12 +46,12 @@ public class Main {
                         }
                     }
                     if (lackOfDiscord) {
-                        if (rand.nextBoolean()) {
+                        if (ayn.nextBoolean()) {
                             map[i][j] = new Chamber(false, false, false, false, false, true, true);
                         }
                     }
                     if (noExit) {
-                        if (rand.nextBoolean()) {
+                        if (ayn.nextBoolean()) {
                             map[i][j] = new Chamber(false, true, false, false, false, false, false);
                             noExit = false;
                         }
@@ -112,7 +112,7 @@ public class Main {
             }
 
             //Begin WampusCheck. This happens *after* the player moves
-            WampusChecker.run(map);
+            WampusChecker.run(map, protag); //WampusChecker needs an instance of Player in order to have the aggro function work.
 
             //Check player surroundings.
             protag.checkAdjacent(protag.currentRoom, map);
@@ -120,6 +120,15 @@ public class Main {
             turns++;
         }
 
+    }
+
+
+    public static void rules() {
+        System.out.println("The rules are simple. You are trapped in a cave system looking for the exit.");
+        System.out.println("There is one randomly-generated exit location.");
+        System.out.println("There is a Wampus in the cave. He will move around at random every 2 turns." +
+                "\n If you encounter him, you must scare him. You have a number of fireworks to scare him with. If you run out and encounter the Wampus again, \n" +
+                "\n you will immediately leave through the same exit. The Wampus will become aggravated, and will attempt to eat you.");
     }
 }
 
