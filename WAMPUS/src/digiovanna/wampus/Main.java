@@ -5,7 +5,10 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
-
+    /**
+     * Main method. All user interaction happens here, with minimal exceptions.
+     * @param args
+     */
     public static void main(String[] args) {
         Player protag = null;
         Random ayn = new Random();
@@ -128,7 +131,11 @@ public class Main {
         System.out.println("There is one randomly-generated exit location.");
         System.out.println("There is a Wampus in the cave. He will move around at random every 2 turns." +
                 "\n If you encounter him, you must scare him. You have a number of fireworks to scare him with. If you run out and encounter the Wampus again, \n" +
-                "\n you will immediately leave through the same exit. The Wampus will become aggravated, and will attempt to eat you.");
+                "\n you will immediately leave through the same exit. The Wampus will become aggravated, and will attempt to eat you." +
+                "\n He will chase you for 2 turns. During this time, he cannot be scared. If he encounters you, he will eat you." +
+                "\n There is one room in the cave with a pit. If you fall into it, you will die." +
+                "\n There are 3 rooms with bats. You are scared of bats. If you encounter them, you will leave through the same entrance you came through.");
+
     }
 }
 

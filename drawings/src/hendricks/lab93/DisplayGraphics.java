@@ -51,5 +51,7 @@ public class DisplayGraphics extends JPanel {
         g.setColor(new Color(173, 98, 13));
         g.fillArc(225, 230, 50, 10, 0, -180);
 
+
+
     }
 }

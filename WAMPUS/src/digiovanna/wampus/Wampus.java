@@ -1,5 +1,8 @@
 package digiovanna.wampus;
 
+/**
+ * the Wampus will move randomly about the cave, and will aggro to the player if he is encountered.
+ */
 public class Wampus {
     //Wampus will wait 2 turns in each chamber before moving
     int WaitingPeriod = 2;

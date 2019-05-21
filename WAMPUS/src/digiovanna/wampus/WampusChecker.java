@@ -2,7 +2,16 @@ package digiovanna.wampus;
 
 import java.util.Random;
 
+/**
+ * WampusChecker is a new Thread that checks on the Wampus's state, and whether or not it is aggroed on the player. It also orders the Wampus to move.
+ *
+ */
 public class WampusChecker extends Thread {
+    /**
+     * Run is a required method from the Thread interface.
+     * @param map The chamber map.
+     * @param protag The Player.
+     */
     public static void run(Chamber[][] map, Player protag) {
         Random rand = new Random();
         for (int i = 0; i < 10; i++) {

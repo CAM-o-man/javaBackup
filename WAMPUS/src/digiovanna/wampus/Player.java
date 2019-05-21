@@ -2,6 +2,10 @@ package digiovanna.wampus;
 
 import java.util.Scanner;
 
+/**
+ * The Player class is the Player. It has several methods to check whether or not it is dead, and contains fireworks to
+ * scare the Wampus. It also records the room it is currently in.
+ */
 public class Player {
     int fireworks = 6;
     int[] currentRoom;
@@ -10,6 +14,11 @@ public class Player {
         this.currentRoom = cr;
     }
 
+    /**
+     * This checks adjacent rooms to give clues to the player.
+     * @param cr The current room @DEPRECATED
+     * @param map
+     */
     @SuppressWarnings("Duplicates")
     void checkAdjacent(int[] cr, Chamber[][] map) { //cr for current room
         int x = cr[0]; //TODO: Replace with this.currentRoom
@@ -84,6 +93,11 @@ public class Player {
             System.exit(1000);
         }
     }
+
+    /**
+     * This moves the Player.
+     * @param x The direction in which to move. 1 is up, 2 is down, 3 is sideways.
+     */
     void move(int x) {
         if (x == 1) {
             this.currentRoom[0] = currentRoom[0] + 1; //Don't know if += or -= works in arrays
@@ -97,6 +111,12 @@ public class Player {
             }
         }
     }
+
+    /**
+     * Checks if the player is currently standing in a hazard, and if that hazard kills him.
+     * @param map The <code>Chamber</code> map.
+     * @return A boolean value, <code>true</code> if the player is, in fact, dead.
+     */
     boolean isDead(Chamber[][] map) {
         if (map[this.currentRoom[0]][this.currentRoom[1]].isHazard && map[this.currentRoom[0]][this.currentRoom[1]].isPit) {
             System.out.println("You fell into a pit and died!");
@@ -115,6 +135,12 @@ public class Player {
         return false;
     }
 
+    /**
+     * DEPRECATED
+     * @param map the chamber map
+     * @throws WampusMoveAlert your mother
+     */
+    @Deprecated
     void scare(Chamber[][] map) throws WampusMoveAlert {
         Scanner input = new Scanner(System.in);
         System.out.println("You have " + this.fireworks + " fireworks remaining.\n Scare the Wampus? [Y|N]");
