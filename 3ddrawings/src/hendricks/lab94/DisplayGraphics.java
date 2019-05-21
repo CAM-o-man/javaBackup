@@ -2,7 +2,6 @@ package hendricks.lab94;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 
 /**
  * @author Connor McDermid
