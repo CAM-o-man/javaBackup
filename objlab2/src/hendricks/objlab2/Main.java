@@ -2,6 +2,12 @@ package hendricks.objlab2;
 
 import java.util.Scanner;
 
+/**
+ * @author Connor McDermid
+ * @lab Object Lab 2
+ * @extra Interfaces
+ * @date 2019.05.23
+ */
 public class Main {
 
     public static void main(String[] args) {
@@ -19,6 +25,9 @@ public class Main {
     }
 }
 
+/**
+ * This was the sample abstract you provided us with
+ */
 interface Template {
     int distance = 0;
     int hours = 0;
@@ -32,6 +41,9 @@ interface Template {
     public String toString();
 }
 
+/**
+ * This was my class
+ */
 class MilesPerHour implements Template {
 
     private int distance = 0;

@@ -2,19 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84ee45c5-8e57-4341-828f-58085601562d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../DiceLab/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../animations/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../animations/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../animations/src/hendricks/lab96/DisplayGraphics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../objlab3/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../objlab3/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WAMPUS/digiovanna/wampus/Chamber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WAMPUS/digiovanna/wampus/Chamber.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/WAMPUS/digiovanna/wampus/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WAMPUS/digiovanna/wampus/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/WAMPUS/digiovanna/wampus/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WAMPUS/digiovanna/wampus/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/digiovanna/wampus/Chamber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/digiovanna/wampus/Chamber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WAMPUS/digiovanna/wampus/Wampus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WAMPUS/digiovanna/wampus/Wampus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WAMPUS/digiovanna/wampus/WampusChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WAMPUS/digiovanna/wampus/WampusChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WAMPUS/digiovanna/wampus/WampusMoveAlert.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WAMPUS/digiovanna/wampus/WampusMoveAlert.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/digiovanna/wampus/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/digiovanna/wampus/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/digiovanna/wampus/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/digiovanna/wampus/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/digiovanna/wampus/Wampus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/digiovanna/wampus/Wampus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/digiovanna/wampus/WampusChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/digiovanna/wampus/WampusChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/digiovanna/wampus/WampusMoveAlert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/digiovanna/wampus/WampusMoveAlert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../drawings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../drawings/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../drawings/out/production/drawings/hendricks/lab93/DisplayGraphics.class" beforeDir="false" afterPath="$PROJECT_DIR$/../drawings/out/production/drawings/hendricks/lab93/DisplayGraphics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../objlab2/src/hendricks/objlab2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../objlab2/src/hendricks/objlab2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repetitiveDrawings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../repetitiveDrawings/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repetitiveDrawings/out/production/repetitiveDrawings/hendricks/lab94/DisplayGraphics.class" beforeDir="false" afterPath="$PROJECT_DIR$/../repetitiveDrawings/out/production/repetitiveDrawings/hendricks/lab94/DisplayGraphics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repetitiveDrawings/src/hendricks/lab94/DisplayGraphics.java" beforeDir="false" afterPath="$PROJECT_DIR$/../repetitiveDrawings/src/hendricks/lab94/DisplayGraphics.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,6 +26,10 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="WAMPUS" />
@@ -31,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/digiovanna/wampus/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+            <state relative-caret-position="204">
+              <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,8 +60,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/digiovanna/wampus/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="140" column="42" selection-start-line="140" selection-start-column="42" selection-end-line="140" selection-end-column="42" />
+            <state relative-caret-position="2618">
+              <caret line="160" column="5" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,7 +90,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/digiovanna/wampus/WampusChecker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="204">
               <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
             </state>
           </provider>
@@ -108,12 +119,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/digiovanna/wampus/Main.java" />
         <option value="$PROJECT_DIR$/src/digiovanna/wampus/Chamber.java" />
         <option value="$PROJECT_DIR$/src/digiovanna/wampus/Wampus.java" />
         <option value="$PROJECT_DIR$/src/digiovanna/wampus/WampusMoveAlert.java" />
-        <option value="$PROJECT_DIR$/src/digiovanna/wampus/Player.java" />
         <option value="$PROJECT_DIR$/src/digiovanna/wampus/WampusChecker.java" />
+        <option value="$PROJECT_DIR$/src/digiovanna/wampus/Player.java" />
+        <option value="$PROJECT_DIR$/src/digiovanna/wampus/Main.java" />
       </list>
     </option>
   </component>
@@ -129,7 +140,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -152,6 +162,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -214,6 +225,9 @@
       <workItem from="1558007726715" duration="1240000" />
       <workItem from="1558355159981" duration="1781000" />
       <workItem from="1558357915391" duration="1265000" />
+      <workItem from="1559159347294" duration="1215000" />
+      <workItem from="1559217736047" duration="382000" />
+      <workItem from="1559241498429" duration="4000" />
     </task>
     <task id="LOCAL-00001" summary="wampus updates">
       <created>1557837926350</created>
@@ -226,14 +240,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29625000" />
+    <option name="totallyTimeSpent" value="31226000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4948605" visible="true" weight="0.2533512" />
-      <window_info id="Structure" order="1" sideWeight="0.5051395" side_tool="true" visible="true" weight="0.2533512" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4904552" visible="true" weight="0.26340482" />
+      <window_info id="Structure" order="1" sideWeight="0.5095448" side_tool="true" visible="true" weight="0.26340482" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -314,10 +328,40 @@
     <option name="LAST_COMMIT_MESSAGE" value="wampus updates" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk-11/lib/src.zip!/java.desktop/java/awt/event/ActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-383">
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#1050#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/digiovanna/wampus/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/digiovanna/wampus/Chamber.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
           <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/digiovanna/wampus/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2618">
+          <caret line="160" column="5" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -328,13 +372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/digiovanna/wampus/WampusChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/digiovanna/wampus/WampusMoveAlert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -342,20 +379,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/digiovanna/wampus/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/digiovanna/wampus/WampusChecker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="140" column="42" selection-start-line="140" selection-start-column="42" selection-end-line="140" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/digiovanna/wampus/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
         </state>
       </provider>
     </entry>

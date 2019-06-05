@@ -2,15 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ab59d3f-ec52-4d3b-9e90-6a7544c3d7af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Painting/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Painting/src/hendricks/lab91/DisplayGraphics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WAMPUS/.idea/dictionaries/cam_o.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WAMPUS/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../drawings/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../drawings/src/hendricks/lab93/DisplayGraphics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/cam_o.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hendricks/lab92/DisplayGraphics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SideProjects/BusTracker/src/mcdermid/bustracker/LocationContact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SideProjects/DaemonicBus/app/src/main/java/mcdermid/bustracker/daemonicbus/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../animations/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../animations/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../animations/src/hendricks/lab96/DisplayGraphics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../objlab3/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../objlab3/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Painting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Painting/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WAMPUS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WAMPUS/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WAMPUS/out/production/WAMPUS/digiovanna/wampus/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../WAMPUS/out/production/WAMPUS/digiovanna/wampus/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WAMPUS/out/production/WAMPUS/digiovanna/wampus/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/../WAMPUS/out/production/WAMPUS/digiovanna/wampus/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WAMPUS/out/production/WAMPUS/digiovanna/wampus/Wampus.class" beforeDir="false" afterPath="$PROJECT_DIR$/../WAMPUS/out/production/WAMPUS/digiovanna/wampus/Wampus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WAMPUS/out/production/WAMPUS/digiovanna/wampus/WampusChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../WAMPUS/out/production/WAMPUS/digiovanna/wampus/WampusChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WAMPUS/out/production/WAMPUS/digiovanna/wampus/WampusMoveAlert.class" beforeDir="false" afterPath="$PROJECT_DIR$/../WAMPUS/out/production/WAMPUS/digiovanna/wampus/WampusMoveAlert.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WAMPUS/src/digiovanna/wampus/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WAMPUS/src/digiovanna/wampus/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WAMPUS/src/digiovanna/wampus/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WAMPUS/src/digiovanna/wampus/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../objlab2/src/hendricks/objlab2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../objlab2/src/hendricks/objlab2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repetitiveDrawings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../repetitiveDrawings/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repetitiveDrawings/out/production/repetitiveDrawings/hendricks/lab94/DisplayGraphics.class" beforeDir="false" afterPath="$PROJECT_DIR$/../repetitiveDrawings/out/production/repetitiveDrawings/hendricks/lab94/DisplayGraphics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repetitiveDrawings/src/hendricks/lab94/DisplayGraphics.java" beforeDir="false" afterPath="$PROJECT_DIR$/../repetitiveDrawings/src/hendricks/lab94/DisplayGraphics.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hendricks/lab92/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+            <state relative-caret-position="221">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,11 +53,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hendricks/lab92/DisplayGraphics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -82,8 +90,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -98,6 +106,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556895413416" />
@@ -148,17 +157,18 @@
       <workItem from="1557750700008" duration="972000" />
       <workItem from="1557751847752" duration="812000" />
       <workItem from="1557752796218" duration="386000" />
+      <workItem from="1559563439705" duration="45000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10285000" />
+    <option name="totallyTimeSpent" value="10330000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2533512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -212,8 +222,8 @@
     <entry file="file://$PROJECT_DIR$/l17voj5r1pw21.jpg" />
     <entry file="file://$PROJECT_DIR$/src/hendricks/lab92/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        <state relative-caret-position="221">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -222,11 +232,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hendricks/lab92/DisplayGraphics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
         </state>
       </provider>
     </entry>

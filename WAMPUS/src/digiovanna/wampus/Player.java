@@ -1,12 +1,14 @@
 package digiovanna.wampus;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Scanner;
 
 /**
  * The Player class is the Player. It has several methods to check whether or not it is dead, and contains fireworks to
  * scare the Wampus. It also records the room it is currently in.
  */
-public class Player {
+public class Player implements ActionListener {
     int fireworks = 6;
     int[] currentRoom;
     boolean exists = true;
@@ -148,6 +150,14 @@ public class Player {
             map[this.currentRoom[0]][this.currentRoom[1]].wamp.isScared = true;
             throw new WampusMoveAlert(1);
         }
+    }
+
+    boolean inWampRoom(Chamber room) {
+        return room.containsWampus;
+    }
+
+    public void actionPerformed(ActionEvent e) {
+
     }
 
 }

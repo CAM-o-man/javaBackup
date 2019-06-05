@@ -1,5 +1,6 @@
 package digiovanna.wampus;
 
+import java.awt.event.ActionEvent;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -7,9 +8,10 @@ import java.util.Scanner;
 public class Main {
     /**
      * Main method. All user interaction happens here, with minimal exceptions.
-     * @param args
+     * @param args N/A
      */
     public static void main(String[] args) {
+        ActionEvent scare = new ActionEvent();
         Player protag = null;
         Random ayn = new Random();
         Scanner input = new Scanner(System.in);
@@ -91,7 +93,6 @@ public class Main {
                     for (int i = 0; i < 10; i++) {
                         for (int j = 0; j < 2; j++) {
                             System.out.print(map[i][j].isExit);
-
                         }
                         System.out.println();
                     }
