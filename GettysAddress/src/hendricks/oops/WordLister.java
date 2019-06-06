@@ -1,15 +1,20 @@
 package hendricks.oops;
 
 import java.io.FileNotFoundException;
-import java.lang.reflect.Array;
 import java.util.*;
 import java.io.File;
 
+/**
+ * @author Connor McDermid
+ * @lab Gettysburg Address
+ * @date 2019.06.06
+ * @extra Regexes and Sets
+ */
+@SuppressWarnings("WeakerAccess")
 public class WordLister {
     ArrayList<String> listmod; //Used for mutating lists in loops / recursive functions
-    int reci = 0; //recursive iterator
-    int count = 0; //recursive counter
     public static void main(String[] args) throws FileNotFoundException {
+        //creating scanners
         ArrayList<String> wordlist = new ArrayList<>();
         ArrayList<String> fishlist = new ArrayList<>();
         ArrayList<String> peaselist = new ArrayList<>();
@@ -20,6 +25,7 @@ public class WordLister {
         Scanner peasereader = new Scanner(pease);
         Scanner lincoln = new Scanner(gettysburg);
         Scanner input = new Scanner(System.in);
+
         Thread fishies = new Thread(() -> { //Iterating through this is time consuming and can be sped up with multithreading
             while(fishreader.hasNext()) {
                 fishlist.add(fishreader.next());
@@ -38,16 +44,19 @@ public class WordLister {
         }
 
 
-
+        //Printing the files, one word/line
         wordlist.forEach(System.out::println);
         fishlist.forEach(System.out::println);
         peaselist.forEach(System.out::println);
+        //finding average length and longest word
         int gettysAvgLength = avglen(wordlist);
         int gettysLongest = longest(wordlist);
+
         System.out.println("What word would you like to search for?");
         String key = input.nextLine();
+        //noinspection UnnecessaryLocalVariable
         ArrayList<String> lexiOrder = wordlist;
-        Collections.sort(lexiOrder);
+        Collections.sort(lexiOrder); //Needs to be sorted into lexicographical order
         WordLister lister = new WordLister();
         int wordUses = lister.count(lexiOrder, key);
         System.out.println("The average length of words in the Gettysburg Address is " + gettysAvgLength);

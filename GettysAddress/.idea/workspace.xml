@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bda8e34-badd-4a01-9a43-80bfdf192e4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/cam_o.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fish.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gettysburg.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pease.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monsterlab/.idea/dictionaries/cam_o.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monsterlab/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monsterlab/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monsterlab/src/hendricks/oops/Monster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Monsterlab/src/hendricks/oops/MonsterRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/cam_o.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/cam_o.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hendricks/oops/WordLister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hendricks/oops/WordLister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monsterlab/.idea/dictionaries/cam_o.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Monsterlab/.idea/dictionaries/cam_o.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monsterlab/src/hendricks/oops/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monsterlab/src/hendricks/oops/Monster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Monsterlab/src/hendricks/oops/MonsterRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monsterlab/src/hendricks/oops/MonsterRunner.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,16 +18,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hendricks/oops/WordLister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="94" column="54" lean-forward="true" selection-start-line="94" selection-start-column="54" selection-end-line="94" selection-end-column="54" />
+            <state relative-caret-position="272">
+              <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,6 +133,12 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="git commit" />
+      <command value="git add *" />
+    </option>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -177,16 +178,15 @@
       <option name="presentableId" value="Default" />
       <updated>1559740618402</updated>
       <workItem from="1559740621259" duration="8937000" />
-      <workItem from="1559825624986" duration="758000" />
+      <workItem from="1559825624986" duration="1375000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9695000" />
+    <option name="totallyTimeSpent" value="10312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -203,7 +203,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32892805" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="CheckStyle" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -246,8 +246,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hendricks/oops/WordLister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="94" column="54" lean-forward="true" selection-start-line="94" selection-start-column="54" selection-end-line="94" selection-end-column="54" />
+        <state relative-caret-position="272">
+          <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
