@@ -1,6 +1,8 @@
 <component name="ProjectDictionaryState">
   <dictionary name="cam-o">
     <words>
+      <w>allwords</w>
+      <w>avglen</w>
       <w>fishies</w>
       <w>fishlist</w>
       <w>fishreader</w>
@@ -11,7 +13,9 @@
       <w>peasereader</w>
       <w>regexes</w>
       <w>remsuper</w>
+      <w>staticmethodavoidance</w>
       <w>wordlist</w>
+      <w>wordnum</w>
     </words>
   </dictionary>
 </component>

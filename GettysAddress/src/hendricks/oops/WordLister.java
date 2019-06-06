@@ -97,6 +97,11 @@ public class WordLister {
         return count;
     }
 
+    /**
+     *
+     * @param list The list to find all words in
+     * @return Returns a Set because Sets won't accept duplicate words by default.
+     */
     public Set<String> remsuper(ArrayList<String> list) { //remsuper = remove superfluous
         Set<String> allwords = new LinkedHashSet<>();
         String temp;
