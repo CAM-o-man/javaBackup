@@ -32,7 +32,7 @@ class Quadratic implements Template {
 
     Quadratic() {}
 
-    Quadratic(int quadA, int quadB, int quadC) {
+    public Quadratic(int quadA, int quadB, int quadC) {
         this.a = quadA;
         this.b = quadB;
         this.c = quadC;
@@ -43,10 +43,20 @@ class Quadratic implements Template {
         this.c = quadC;
     }
     public void calcRoots() {
-
+        double x1 = (-b + Math.sqrt(b^2 + -4 * a * c)) / (2 * a);
+        double x2 = (-b - Math.sqrt(b^2 + -4 * a * c)) / (2 * a);
+        this.rootOne = x1;
+        this.rootTwo = x2;
     }
+
     @Override
     public String toString() {
-
+        return "Quadratic{" +
+                "a=" + a +
+                ", b=" + b +
+                ", c=" + c +
+                ", rootOne=" + rootOne +
+                ", rootTwo=" + rootTwo +
+                '}';
     }
 }

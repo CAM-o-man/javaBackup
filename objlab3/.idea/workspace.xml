@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f84ebf5-57ef-4b59-b953-7cbc308e5890" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../objlab2/src/hendricks/objlab2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../objlab2/src/hendricks/objlab2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fruitStandLab/.idea/dictionaries/cam_o.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fruitStandLab/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fruitStandLab/src/hendricks/oops/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fruitStandLab/src/hendricks/oops/Banana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fruitStandLab/src/hendricks/oops/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fruitStandLab/src/hendricks/oops/Kumquat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fruitStandLab/src/hendricks/oops/Orange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mazeSolver/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mazeSolver/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mazeSolver/maze.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mazeSolver/src/hendricks/oops/Inspector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mazeSolver/src/hendricks/oops/MazeListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mazeSolver/src/hendricks/oops/MazeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GettysAddress/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GettysAddress/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hendricks/objlab3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hendricks/objlab3/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hendricks/objlab3/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="433">
+              <caret line="31" column="15" lean-forward="true" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -47,9 +61,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -94,11 +108,13 @@
       <updated>1558615893018</updated>
       <workItem from="1558615900368" duration="1736000" />
       <workItem from="1559045579541" duration="223000" />
+      <workItem from="1560427497579" duration="171000" />
+      <workItem from="1560427854270" duration="558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1959000" />
+    <option name="totallyTimeSpent" value="2688000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -124,6 +140,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="IDEtalk Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -133,6 +150,7 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="IDEtalk" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,8 +170,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hendricks/objlab3/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="433">
+          <caret line="31" column="15" lean-forward="true" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
         </state>
       </provider>
     </entry>
